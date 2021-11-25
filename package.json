@@ -1,0 +1,25 @@
+{
+  "name": "express_mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npx nodemon Src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MADHURIMA956/Express_MVC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MADHURIMA956/Express_MVC/issues"
+  },
+  "homepage": "https://github.com/MADHURIMA956/Express_MVC#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15"
+  }
+}
