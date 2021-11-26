@@ -5,7 +5,7 @@ const router = express.Router();
 
 
 
-router.post('/users' , async (req, res) => {
+router.post('' , async (req, res) => {
     //thenable
 
     try {
@@ -19,7 +19,7 @@ router.post('/users' , async (req, res) => {
 
 // get 
 
-router.get('/users' , async (req, res) => {
+router.get('' , async (req, res) => {
     //thenable
 
     try {
@@ -32,7 +32,7 @@ router.get('/users' , async (req, res) => {
 
 //get single
 
-router.get('/users/:id' , async (req, res) => {
+router.get('/:id' , async (req, res) => {
     //thenable
 
     let idd = req.params.id
@@ -48,7 +48,7 @@ router.get('/users/:id' , async (req, res) => {
 
 //patch
 
-router.patch('/users/:id' , async (req, res) => {
+router.patch('/:id' , async (req, res) => {
     //thenable
     let idd =  req.params.id 
     try {
@@ -63,7 +63,7 @@ router.patch('/users/:id' , async (req, res) => {
 
 // delete users
 
-router.delete('/users/:id' , async (req, res) => {
+router.delete('/:id' , async (req, res) => {
     //thenable
     let idd =  req.params.id 
     try {
