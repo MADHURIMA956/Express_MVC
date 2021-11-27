@@ -29,7 +29,6 @@ router.get('' , async (req, res) => {
         return res.status(500).json( { message : e.message , status : 'Failed' } )
     }
 });
-
 //get single
 
 router.get('/:id' , async (req, res) => {

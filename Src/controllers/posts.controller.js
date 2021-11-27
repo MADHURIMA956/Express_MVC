@@ -5,7 +5,7 @@ const router = express.Router();
 
 
 
-router.post('/posts'  , async( req, res) => {
+router.post(''  , async( req, res) => {
 
     try{
 
@@ -17,7 +17,7 @@ router.post('/posts'  , async( req, res) => {
     }
 });
 
-router.get('/posts' , async( req,res )=> {
+router.get('' , async( req,res )=> {
 
     try{
 
@@ -29,7 +29,7 @@ router.get('/posts' , async( req,res )=> {
     }
 });
 
-router.get('/posts/:id' , async( req ,res ) => {
+router.get('/:id' , async( req ,res ) => {
     try{
 
         const posts = await Post.findById(req.params.id).lean().exec();
@@ -40,7 +40,7 @@ router.get('/posts/:id' , async( req ,res ) => {
     }
 })
 
-router.patch('/posts/:id' , async( req ,res ) => {
+router.patch('/:id' , async( req ,res ) => {
     try{
 
         const posts = await Post.findByIdAndUpdate(req.params.id , req.body , { new : true }).lean().exec();
@@ -51,7 +51,7 @@ router.patch('/posts/:id' , async( req ,res ) => {
     }
 })
 
-router.delete('/posts/:id' , async( req ,res ) => {
+router.delete('/:id' , async( req ,res ) => {
     try{
 
         const posts = await Post.findByIdAndDelete(req.params.id).lean().exec();

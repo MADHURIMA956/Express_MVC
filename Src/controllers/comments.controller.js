@@ -4,7 +4,7 @@ const Comment = require('../models/comments.model');
 const router = express.Router();
 
 
-router.post('/comments'  , async( req, res) => {
+router.post('', async( req, res) => {
 
     try{
 
@@ -16,7 +16,7 @@ router.post('/comments'  , async( req, res) => {
     }
 });
 
-router.get('/comments' , async( req,res )=> {
+router.get('', async( req,res )=> {
 
     try{
 
@@ -28,7 +28,7 @@ router.get('/comments' , async( req,res )=> {
     }
 });
 
-router.get('/comments/:id' , async( req ,res ) => {
+router.get('/:id' , async( req ,res ) => {
     try{
 
         const comments = await Comment.findById(req.params.id).lean().exec();
@@ -39,7 +39,7 @@ router.get('/comments/:id' , async( req ,res ) => {
     }
 })
 
-router.patch('/comments/:id' , async( req ,res ) => {
+router.patch('/:id' , async( req ,res ) => {
     try{
 
         const comments = await Comment.findByIdAndUpdate(req.params.id , req.body , { new : true }).lean().exec();
@@ -50,7 +50,7 @@ router.patch('/comments/:id' , async( req ,res ) => {
     }
 })
 
-router.delete('/comments/:id' , async( req ,res ) => {
+router.delete('/:id' , async( req ,res ) => {
     try{
 
         const comments = await Comment.findByIdAndDelete(req.params.id).lean().exec();

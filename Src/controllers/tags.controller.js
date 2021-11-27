@@ -6,7 +6,7 @@ const router = express.Router();
 
 
 
-router.post('/tags'  , async( req, res) => {
+router.post(''  , async( req, res) => {
 
     try{
 
@@ -18,7 +18,7 @@ router.post('/tags'  , async( req, res) => {
     }
 });
 
-router.get('/tags' , async( req,res )=> {
+router.get('' , async( req,res )=> {
 
     try{
 
